@@ -218,7 +218,7 @@ func (d *DebugMessage) Get() string {
 
 // GetId returns the id of the object that emitted this message. Can be empty.
 func (d *DebugMessage) GetId() string {
-	return C.GoString(C.gst_debug_message_get_id(d.ptr))
+	return ""
 }
 
 type LogFunction = func(
